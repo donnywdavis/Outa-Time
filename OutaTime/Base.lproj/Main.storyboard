@@ -142,35 +142,85 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="30" translatesAutoresizingMaskIntoConstraints="NO" id="H9E-IV-AOj">
-                                <rect key="frame" x="140" y="192" width="320" height="216"/>
+                                <rect key="frame" x="140" y="364" width="320" height="216"/>
                                 <date key="date" timeIntervalSinceReferenceDate="445876717.15564197">
                                     <!--2015-02-17 14:38:37 +0000-->
                                 </date>
-                                <date key="minimumDate" timeIntervalSinceReferenceDate="-1425042000">
-                                    <!--1955-11-05 11:00:00 +0000-->
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="-7131848638">
+                                    <!--1775-01-01 10:56:02 +0000-->
                                 </date>
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="1420023600">
                                     <!--2045-12-31 11:00:00 +0000-->
                                 </date>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Important Dates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXG-O5-3oE">
+                                <rect key="frame" x="211" y="72" width="178" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qy0-d4-fr4">
+                                <rect key="frame" x="220" y="109" width="161" height="30"/>
+                                <state key="normal" title="Star Wars release date"/>
+                                <connections>
+                                    <action selector="importantDateSelected:" destination="bBv-ya-q7Q" eventType="touchUpInside" id="i5l-VW-L5c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evW-rB-bJp">
+                                <rect key="frame" x="201" y="147" width="198" height="30"/>
+                                <state key="normal" title="Declaration of Independence"/>
+                                <connections>
+                                    <action selector="importantDateSelected:" destination="bBv-ya-q7Q" eventType="touchUpInside" id="ZY1-hc-Dta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAE-3b-wAd">
+                                <rect key="frame" x="222" y="185" width="156" height="30"/>
+                                <state key="normal" title="Kennedy assassination"/>
+                                <connections>
+                                    <action selector="importantDateSelected:" destination="bBv-ya-q7Q" eventType="touchUpInside" id="czQ-jY-82f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRI-Cy-mY3">
+                                <rect key="frame" x="254" y="223" width="93" height="30"/>
+                                <state key="normal" title="Moon landing"/>
+                                <connections>
+                                    <action selector="importantDateSelected:" destination="bBv-ya-q7Q" eventType="touchUpInside" id="md5-6n-AEL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqm-G3-ITL">
+                                <rect key="frame" x="193" y="261" width="214" height="30"/>
+                                <state key="normal" title="Back to the Future release date"/>
+                                <connections>
+                                    <action selector="importantDateSelected:" destination="bBv-ya-q7Q" eventType="touchUpInside" id="gOP-m3-dYd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9p-tg-iTO">
+                                <rect key="frame" x="206" y="299" width="188" height="30"/>
+                                <state key="normal" title="Discovery of Flux Capacitor"/>
+                                <connections>
+                                    <action selector="importantDateSelected:" destination="bBv-ya-q7Q" eventType="touchUpInside" id="tsC-iI-LSC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="H9E-IV-AOj" firstAttribute="centerY" secondItem="0M6-CM-Cq0" secondAttribute="centerY" id="1nB-Ac-1ok"/>
-                            <constraint firstAttribute="centerX" secondItem="H9E-IV-AOj" secondAttribute="centerX" id="62K-3t-wuI"/>
-                            <constraint firstAttribute="trailing" secondItem="H9E-IV-AOj" secondAttribute="trailing" id="6qG-EB-HfH"/>
-                            <constraint firstItem="H9E-IV-AOj" firstAttribute="leading" secondItem="0M6-CM-Cq0" secondAttribute="leading" id="CLf-7m-zCW"/>
-                            <constraint firstItem="H9E-IV-AOj" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="N8X-H8-UbW"/>
-                            <constraint firstAttribute="centerY" secondItem="H9E-IV-AOj" secondAttribute="centerY" id="miv-Hn-k06"/>
+                            <constraint firstItem="evW-rB-bJp" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="3Bb-o3-Ujl"/>
+                            <constraint firstItem="C9p-tg-iTO" firstAttribute="top" secondItem="rqm-G3-ITL" secondAttribute="bottom" constant="8" id="3SR-hL-dt6"/>
+                            <constraint firstItem="mRI-Cy-mY3" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="3lP-On-7Cs"/>
+                            <constraint firstItem="Qy0-d4-fr4" firstAttribute="top" secondItem="vXG-O5-3oE" secondAttribute="bottom" constant="8" id="4pO-6Q-wQk"/>
+                            <constraint firstItem="DAE-3b-wAd" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="6vP-jC-r6L"/>
+                            <constraint firstItem="vXG-O5-3oE" firstAttribute="top" secondItem="PxX-lT-acD" secondAttribute="bottom" constant="8" id="A8d-0X-D1x"/>
+                            <constraint firstItem="C9p-tg-iTO" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="AjN-m1-I3c"/>
+                            <constraint firstItem="H9E-IV-AOj" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="Gbt-BN-Z9q"/>
+                            <constraint firstItem="rqm-G3-ITL" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="NXN-HN-RP2"/>
+                            <constraint firstItem="mRI-Cy-mY3" firstAttribute="top" secondItem="DAE-3b-wAd" secondAttribute="bottom" constant="8" id="OZz-Ej-18l"/>
+                            <constraint firstItem="evW-rB-bJp" firstAttribute="top" secondItem="Qy0-d4-fr4" secondAttribute="bottom" constant="8" id="OsQ-v9-6wW"/>
+                            <constraint firstItem="rqm-G3-ITL" firstAttribute="top" secondItem="mRI-Cy-mY3" secondAttribute="bottom" constant="8" id="djh-uO-Rjd"/>
+                            <constraint firstItem="H9E-IV-AOj" firstAttribute="top" secondItem="C9p-tg-iTO" secondAttribute="bottom" constant="35" id="dki-52-quY"/>
+                            <constraint firstItem="vXG-O5-3oE" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="hYL-9u-cAv"/>
+                            <constraint firstItem="DAE-3b-wAd" firstAttribute="top" secondItem="evW-rB-bJp" secondAttribute="bottom" constant="8" id="oZZ-Kr-vis"/>
+                            <constraint firstItem="Qy0-d4-fr4" firstAttribute="centerX" secondItem="0M6-CM-Cq0" secondAttribute="centerX" id="se0-5x-cUW"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="62K-3t-wuI"/>
-                                <exclude reference="6qG-EB-HfH"/>
-                                <exclude reference="CLf-7m-zCW"/>
-                                <exclude reference="miv-Hn-k06"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="datePicker" destination="H9E-IV-AOj" id="Ajh-o1-gkZ"/>
@@ -178,7 +228,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjJ-Yj-yzi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2859" y="429"/>
+            <point key="canvasLocation" x="2909" y="413"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kQj-sd-Zv3">
