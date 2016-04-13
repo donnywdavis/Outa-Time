@@ -19,7 +19,7 @@ If my calculations are correct, when this baby hits 88 miles per hour... you're 
 #### Storyboard Tasks
 
 * [x] The time circuits view should be embedded in a navigation controller
-* [ ] All label groups should be centered horizontally and 20 points apart. The actual readout labels should also use the custom font "digital-7".
+* [x] All label groups should be centered horizontally and 20 points apart. The actual readout labels should also use the custom font "digital-7".
 	* [x] Below the labels for the destination time, there should be a set of labels for "present time"
 		* [x] Choose a lime green/yellow color for this label
 	* [x] Below the present time labels, there should be a set for "last time departed"
@@ -28,7 +28,7 @@ If my calculations are correct, when this baby hits 88 miles per hour... you're 
 	* [X] The actual speed label should be red in color
 * [X] All relevant labels need to be wired to their associated properties
 
-* [ ] Below all the labels, there should be 2 buttons, also centered horizontally and spaced 20 pts apart from both the other labels and each other
+* [x] Below all the labels, there should be 2 buttons, also centered horizontally and spaced 20 pts apart from both the other labels and each other
 	* [x] These buttons should be named "SET DESTINATION TIME" and "TRAVEL BACK"
 	* [x] The buttons should both be teal in color
 	* [x] These buttons should be wired to their appropriate IBActions or segues
