@@ -29,6 +29,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *lastTimeDepartedLabel;
 @property (weak, nonatomic) IBOutlet UILabel *presentTimeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
+@property (weak, nonatomic) IBOutlet UIButton *travelBackButton;
 
 // This is an IBAction. It is a method that will fire when the element it's connected to fires an event of your choosing.
 - (IBAction)travelBack:(UIButton *)sender;
@@ -117,6 +118,18 @@
     // 12. The destinationTimeLabel needs to be set to the destination date using our date formatter object
     //
     self.destinationTimeLabel.text = [dateFormatter stringFromDate:destinationDate];
+    
+    //
+    // Used the interwebs to figure out a way to compare the destination date with today's date.
+    // Comparing today with the destination and using the ordering from the result to determine the
+    // text for the button.
+    //
+    NSComparisonResult dateResult = [[NSDate date] compare:destinationDate];
+    if (dateResult == NSOrderedAscending) {
+        [self.travelBackButton setTitle:@"TRAVEL FORWARD" forState:UIControlStateNormal];
+    } else {
+        [self.travelBackButton setTitle:@"TRAVEL BACK" forState:UIControlStateNormal];
+    }
 }
 
 #pragma mark - Action Handlers

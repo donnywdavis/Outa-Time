@@ -55,8 +55,8 @@
                                 <color key="textColor" red="0.26862466012953889" green="1" blue="0.011085732172279261" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JAN 01 2000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E52-Ik-ZpG">
-                                <rect key="frame" x="210" y="283" width="180" height="37"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--- -- ----" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E52-Ik-ZpG">
+                                <rect key="frame" x="217" y="283" width="166" height="37"/>
                                 <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.59042419206778285" blue="0.055380231755680409" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -83,7 +83,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RGn-yc-ck9">
-                                <rect key="frame" x="251.5" y="476" width="98" height="30"/>
+                                <rect key="frame" x="251" y="476" width="98" height="30"/>
                                 <state key="normal" title="TRAVEL BACK">
                                     <color key="titleColor" red="0.039847372839999999" green="1" blue="0.84394318710000005" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -122,6 +122,7 @@
                         <outlet property="lastTimeDepartedLabel" destination="E52-Ik-ZpG" id="y9h-7j-NyL"/>
                         <outlet property="presentTimeLabel" destination="fV5-jl-CfC" id="2lD-D9-ULB"/>
                         <outlet property="speedLabel" destination="ji5-Y0-Avk" id="fyE-yn-hA1"/>
+                        <outlet property="travelBackButton" destination="RGn-yc-ck9" id="Z8Y-sa-LN7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
