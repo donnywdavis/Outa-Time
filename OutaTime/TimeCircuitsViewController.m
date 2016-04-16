@@ -207,8 +207,8 @@
         if (currentSpeed >= 88) {
             [self stopTimer];
             
+            // Simulate a flash for going back in time once speed has been hit
             self.view.backgroundColor = [UIColor whiteColor];
-//            self.view.backgroundColor = [UIColor grayColor];
 
             //
             // 21. Then we need to update the lastTimeDepartedLabel with the value of the presentTimeLabel.
@@ -238,9 +238,16 @@
 }
 
 - (void)reduceSpeed {
+    //
+    // Set the background color back once we reach our destination
+    //
     if (currentSpeed == 88) {
         self.view.backgroundColor = [UIColor colorWithRed:54.0 green:54.0 blue:54.0 alpha:0.2];
     }
+    
+    //
+    // Reduce our speed until we reach 0 then stop the timer
+    //
     if (currentSpeed > 0) {
         currentSpeed -= 2;
         [self setSpeedLabel];
