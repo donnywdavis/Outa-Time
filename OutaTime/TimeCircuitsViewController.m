@@ -38,6 +38,7 @@
 - (void)startTimer;
 - (void)stopTimer;
 - (void)updateSpeed;
+- (void)reduceSpeed;
 
 @end
 
@@ -205,6 +206,9 @@
         //
         if (currentSpeed >= 88) {
             [self stopTimer];
+            
+            self.view.backgroundColor = [UIColor whiteColor];
+//            self.view.backgroundColor = [UIColor grayColor];
 
             //
             // 21. Then we need to update the lastTimeDepartedLabel with the value of the presentTimeLabel.
@@ -219,10 +223,29 @@
             //
             // 23. Lastly, we need to reset the current speed label to 0 here.
             //
-            currentSpeed = 0;
-            [self setSpeedLabel];
+//            currentSpeed = 0;
+//            [self setSpeedLabel];
+
+            // Let's reduce the speed instead of coming to a full stop
+            speedometer = [NSTimer scheduledTimerWithTimeInterval:0.2
+                                                           target:self
+                                                         selector:@selector(reduceSpeed)
+                                                         userInfo:nil
+                                                          repeats:YES];
         }
         
+    }
+}
+
+- (void)reduceSpeed {
+    if (currentSpeed == 88) {
+        self.view.backgroundColor = [UIColor colorWithRed:54.0 green:54.0 blue:54.0 alpha:0.2];
+    }
+    if (currentSpeed > 0) {
+        currentSpeed -= 2;
+        [self setSpeedLabel];
+    } else if (currentSpeed == 0) {
+        [self stopTimer];
     }
 }
 

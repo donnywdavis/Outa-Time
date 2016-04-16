@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "TimeCircuitsViewController.h"
 
-@interface DatePickerViewController : UIViewController
+@interface DatePickerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (strong, nonatomic) id<TimeCircuitsDatePickerDelegate> delegate;
 
