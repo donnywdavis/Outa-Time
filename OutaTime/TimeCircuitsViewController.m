@@ -125,7 +125,7 @@
     // Comparing today with the destination and using the ordering from the result to determine the
     // text for the button.
     //
-    NSComparisonResult dateResult = [[NSDate date] compare:destinationDate];
+    NSComparisonResult dateResult = [[dateFormatter dateFromString:self.presentTimeLabel.text] compare:destinationDate];
     if (dateResult == NSOrderedAscending) {
         [self.travelBackButton setTitle:@"TRAVEL FORWARD" forState:UIControlStateNormal];
     } else {
